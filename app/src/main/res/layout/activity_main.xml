@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="40dip"
+        >
+
+        <TextView
+            android:id="@+id/displayDate1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            android:textSize="30sp" />
+        <Button android:id="@+id/pickDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a date"/>
+
+        <TextView
+            android:id="@+id/displayDate2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="End Date"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"/>
+        <Button android:id="@+id/pickDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a date"/>
+
+        <TextView
+            android:id="@+id/diffDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result Minutes"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"/>
+        <Button android:id="@+id/calDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
