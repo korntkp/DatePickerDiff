@@ -2,12 +2,14 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+
     >
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="40dip"
+
         >
 
         <TextView
@@ -19,7 +21,7 @@
         <Button android:id="@+id/pickDate1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pick a date"/>
+            android:text="Pick a start date"/>
 
         <TextView
             android:id="@+id/displayDate2"
@@ -31,7 +33,7 @@
         <Button android:id="@+id/pickDate2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pick a date"/>
+            android:text="Pick an end date"/>
 
         <TextView
             android:id="@+id/diffDate"

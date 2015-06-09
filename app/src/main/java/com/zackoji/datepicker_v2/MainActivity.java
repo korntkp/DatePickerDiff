@@ -85,8 +85,12 @@ public class MainActivity extends ActionBarActivity {
     /** Calculate Date To Minutes */
     private void calculateDateToMinutes(){
         resultInMinutes = endDate.getTimeInMillis() - startDate.getTimeInMillis();
-        resultInMinutes = resultInMinutes / (60 * 1000);
-        ResultdiffDate.setText("Result is " + resultInMinutes + " Mins");
+        if (resultInMinutes < 0) {
+            ResultdiffDate.setText("Invalid Date, Please try again.");
+        } else {
+            resultInMinutes = resultInMinutes / (60 * 1000);
+            ResultdiffDate.setText("Result is " + resultInMinutes + " Minutes");
+        }
     }
 
     /** Updates the date in the TextView */
